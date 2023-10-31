@@ -4,6 +4,9 @@ number = random.randint(-10000, 10000)
 
 r = abs(number) % 10
 
+if number < 0:
+    r = -r
+
 print("Last digit of {:d} is {:d}".format(number, r), end=" ")
 
 if r > 5:
